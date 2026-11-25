@@ -1,0 +1,38 @@
+/*
+ * Freebuff Desktop — approval/plan request readability.
+ *
+ * Presentation only. Every rule targets the approval card that the app already
+ * renders (semantic classes, not hashed): the card body, the request text block
+ * and its action row. Nothing here changes what is approved, who approves it or
+ * when — the Allow/Deny buttons keep doing exactly what they did before.
+ */
+
+/* The scrolling body of the card: was capped at 50dvh. */
+.question-dock-body {
+  max-height: min(78dvh, 980px) !important;
+  gap: 14px !important;
+}
+
+/* The request text itself: was 240px tall and set in the small UI size. */
+.question-plan {
+  max-height: min(64dvh, 820px) !important;
+  font-family: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace !important;
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+  padding: 14px 16px !important;
+  tab-size: 2 !important;
+}
+
+/* Heading above the request ("The plan is ready for your review"). */
+.question-dock-title {
+  font-size: 14px !important;
+}
+
+/* Allow/Deny stay pinned under the text instead of scrolling away with it. */
+.plan-actions {
+  position: sticky !important;
+  bottom: 0 !important;
+  z-index: 3 !important;
+  padding: 8px 0 2px !important;
+  background: var(--dk-bg, Canvas) !important;
+}

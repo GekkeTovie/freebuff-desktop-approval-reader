@@ -1,0 +1,6 @@
+# Local working copies of the app archive
+_scratch/
+*.patched
+*.orig-*
+app.asar
+node_modules/

@@ -1,0 +1,14 @@
+This repository contains no Freebuff source code, bundle, binary or asset.
+
+What it ships:
+  - approval-reader.css: a stylesheet written for this project.
+  - tools/: small scripts that read your own installed app.asar, insert one block of
+    text into electron/main.cjs, and write the archive back.
+  - apply.ps1 / revert.ps1: wrappers that back up and restore your own archive.
+
+The patch is applied by you, to your own installed copy, on your own machine. Nothing
+is redistributed, and no part of the application is modified beyond the inserted block
+plus the stylesheet it carries.
+
+Freebuff and Freebuff Desktop are products of Freebuff, Inc. This project is not
+affiliated with, endorsed by or supported by Freebuff, Inc.
