@@ -1,4 +1,4 @@
-# Draft issue for CodebuffAI/freebuff
+# Posted issue: CodebuffAI/freebuff#1724 — https://github.com/CodebuffAI/freebuff/issues/1724
 
 **Title:** `[Desktop] Approval card: a long request is unreadable — enlarge the request box and keep Allow/Deny in view`
 

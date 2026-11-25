@@ -7,6 +7,8 @@ area, a larger monospace face and pinned action buttons.
 Nothing here changes behaviour. You still approve or deny exactly what you did before; the
 patch only changes how the request is displayed to you.
 
+Upstream issue: [CodebuffAI/freebuff#1724 — Desktop: approval card, a long request is unreadable](https://github.com/CodebuffAI/freebuff/issues/1724).
+
 ```
 before                          after
 ┌────────────────────────┐      ┌────────────────────────┐
@@ -102,7 +104,7 @@ of Freebuff and a real approval request; take a screenshot before and after.
 | `tools/patch.mjs` | Inserts the block into `electron/main.cjs`, repacks, verifies, optionally replaces. |
 | `tools/selfcheck.mjs` | Proves the packer round-trips an archive byte for byte. |
 | `apply.ps1` / `revert.ps1` | Install and undo, with backup and version pin. |
-| `docs/issue-approval-card.md` | The upstream issue this patch accompanies. |
+| `docs/issue-approval-card.md` | Text of upstream issue [#1724](https://github.com/CodebuffAI/freebuff/issues/1724), which this patch accompanies. |
 
 ## Limits
 
